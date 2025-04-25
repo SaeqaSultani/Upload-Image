@@ -22,7 +22,7 @@ This is a simple web application that allows users to upload images with a title
 
 1. **Clone the repository:**
    ```
-   git clone https://github.com/yourusername/image-upload-app.git
+   git clone git@github.com:SaeqaSultani/Upload-Image.git
    cd image-upload-app
    
 
