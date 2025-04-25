@@ -16,7 +16,7 @@ This is a simple web application that allows users to upload images with a title
 - Express.js
 - Multer (for file uploads)
 - EJS (for rendering views)
-- HTML/CSS (for styling)
+- HTML/Bootstrap (for styling)
   
 ## 💻 Installation
 
