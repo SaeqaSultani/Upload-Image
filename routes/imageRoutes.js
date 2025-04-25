@@ -5,11 +5,14 @@ import { getPosts,savePosts } from '../utils/helper.js';
 const router = express.Router();
 
 export default (upload) => {
+
+    // Handle home route
     router.get('/', (req, res) => {
         const posts = getPosts();
         res.render('home', { posts });
     });
 
+    // Handle upload route
     router.get('/upload', (req, res) => {
         res.render('upload');
     });
@@ -31,9 +34,19 @@ export default (upload) => {
             res.redirect('/');
     });     
 
+    //Handle gallery route
     router.get('/gallery', (req, res) => {
         const posts = getPosts();
         res.render('gallery', { posts });
+      });
+
+      // Handle delete route
+      router.post('/delete/:id', (req, res) => {
+        const posts = getPosts();
+        posts.splice(req.params.id, 1);
+    
+        savePosts(posts);
+        res.redirect('/gallery');
       });
 
     return router;

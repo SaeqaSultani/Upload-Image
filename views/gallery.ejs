@@ -5,10 +5,15 @@
 <% if (posts.length > 0) { %>
     <div class="container mt-5">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        <% posts.forEach(post => { %>
+        <% posts.forEach((post,index) => { %>
           <div class="col">
             <div class="card shadow-lg border-0 rounded-4 h-100">
-              <div class="card-body text-center">
+              <div class="card-body text-center position-relative">
+                <form action="/delete/<%= index %>" method="POST" class="position-absolute top-0 end-0 m-2">
+                    <button type="submit" class="btn btn-sm btn-outline-danger" title="Delete" onclick="return confirm('Are you sure you want to delete this post?')">
+                      <i class="bi bi-trash">X</i>
+                    </button>
+                  </form>
                 <h5 class="card-title text-primary"><%= post.title %></h5>
                 <p class="text-muted"><%= post.date %></p>
   
