@@ -41,6 +41,3 @@ This is a simple web application that allows users to upload images with a title
    
 ## 📷 Screenshots
    ![screenshot](./public/images/Capture1.PNG)
-    ![Screenshot](./public/images/Capture1.PNG)
-    ![Screenshot](/public/images/Capture2.PNG)
-    ![Screenshot](/public/images/Capture3.PNG)
