@@ -1,0 +1,44 @@
+<%- include("partial/header", { title: "Home" }) %>
+
+<div class="hero text-center">
+  <h1 class="display-5">Welcome to the Image Upload App</h1>
+</div>
+
+<% if (posts.length > 0) { 
+  const latestPost = posts[posts.length - 1];
+%>
+  <div class="text-center">
+    <h4 class="mt-5">Latest Uploaded Images</h4>
+  </div>
+
+  <div class="container mt-5">
+  <div class="card shadow-lg border-0 rounded-4 p-4">
+    <div class="card-body text-center">
+      <h3 class="card-title mb-3 text-primary"><%= latestPost.title %></h3>
+      <p class="text-muted mb-4"><%= latestPost.date %></p>
+
+      <div class="row justify-content-center">
+        <% latestPost.image.forEach(img => { %>
+          <div class="col-md-4 mb-4">
+            <div class="image-wrapper position-relative">
+              <img 
+                src="<%= img %>" 
+                class="img-fluid rounded-3 shadow-sm border"
+                style="max-height: 300px; object-fit: cover;"
+                alt="Uploaded Image"
+              />
+            </div>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% } else { %>
+  <div class="alert alert-info text-center mt-5 mx-5">
+    No images uploaded yet.
+  </div>
+<% } %>
+
+<%- include("partial/footer") %>
