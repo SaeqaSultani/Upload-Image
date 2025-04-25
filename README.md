@@ -7,6 +7,7 @@ This is a simple web application that allows users to upload images with a title
 - Upload an image or multiple image with a custom title
 - Display the **latest uploaded image** with its **title and date** on the homepage
 - Browse all uploaded images on the **Gallery page**
+- Delete uploaded images on the **Gallery page**
 - File upload handled by **Multer**
 - Views rendered using **EJS templates**
 
