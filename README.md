@@ -40,7 +40,7 @@ This is a simple web application that allows users to upload images with a title
    http://localhost:3001
    
 ## 📷 Screenshots
-   
-    ![Screenshot](/public/images/Capture1.PNG)
+   ![screenshot](./public/images/Capture1.PNG)
+    ![Screenshot](./public/images/Capture1.PNG)
     ![Screenshot](/public/images/Capture2.PNG)
     ![Screenshot](/public/images/Capture3.PNG)
