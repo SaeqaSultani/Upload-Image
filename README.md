@@ -20,3 +20,27 @@ This is a simple web application that allows users to upload images with a title
 
 ## 📂 Project Structure
 
+## 💻 Installation
+
+1. **Clone the repository:**
+   ```
+   git clone https://github.com/yourusername/image-upload-app.git
+   cd image-upload-app
+   
+
+2. **Install dependencies:**
+   ```
+    npm install
+3. **Run the server:**
+    ```
+     node index.js
+
+4. **Open in browser:**
+   ```
+   http://localhost:3001
+   
+## 📷 Screenshots
+   
+    ![Screenshot](/public/images/Capture1.PNG)
+    ![Screenshot](/public/images/Capture2.PNG)
+    ![Screenshot](/public/images/Capture3.PNG)
