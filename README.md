@@ -17,9 +17,7 @@ This is a simple web application that allows users to upload images with a title
 - Multer (for file uploads)
 - EJS (for rendering views)
 - HTML/CSS (for styling)
-
-## 📂 Project Structure
-
+  
 ## 💻 Installation
 
 1. **Clone the repository:**
